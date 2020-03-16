@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Lab1;
 
 import javax.swing.*;
 import java.awt.*;
@@ -51,7 +51,6 @@ public class DrawPanel extends JPanel {
         g.fillArc(350, 650, 250, 250, 45, 90);
         g.setColor(Color.YELLOW);
         g.fillArc(600, 650, 250, 100, 30, -120);
-//        g.setColor(Color.BLACK);
-//        g.fill3DRect(450, 150, 150, 100, true);
+
     }
 }

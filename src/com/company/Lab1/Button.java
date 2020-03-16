@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Lab1;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,6 +21,7 @@ public class Button extends JFrame {
        // fancyJButton.addActionListener(handler);
         plainJButton.addActionListener(handler);
     }
+
 
     private class ButtonHandler implements ActionListener
     {
