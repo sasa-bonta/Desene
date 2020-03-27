@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.awt.geom.Rectangle2D;
 
 public class Deplasare extends JPanel implements ActionListener {
-    Timer timer = new Timer(1, this);
+    Timer timer = new Timer(20, this);
     double x = 100, y = 100, velX = 1, velY = 2;
     int red = 22, green = 216, blue = 0, r1 = 22, g1 = 216, b1 = 0, r2 = 216, g2 = 22, b2 = 0;
     int count = 0;
@@ -24,7 +24,7 @@ public class Deplasare extends JPanel implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        if(x < 100 || x >= 200 ) {
+        if(x < 100 || x >= 110 ) {
             velX = -velX;
             count++;
             if (count%2 != 0) {
@@ -39,12 +39,11 @@ public class Deplasare extends JPanel implements ActionListener {
             }
         }
 
-        if(y < 100 || y >= 300 ) {
+        if(y < 100 || y >= 120 ) {
             velY = -velY;
         }
         x += velX;
         y += velY;
         repaint();
     }
-
 }
